@@ -17,7 +17,9 @@ class Division {
     public String getName() {
         return name;
     }
-
+    /**
+     * @return string containing the properties of the class
+     */
     @Override
     public String toString() {
         return name + " " + id;

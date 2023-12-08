@@ -17,33 +17,48 @@ class Man {
         this.dateOfBirth = dateOfBirth;
     }
 
+    /**
+     * @return id - private property of class Man
+     */
     public int getId() {
         return id;
     }
-
+    /**
+     * @return name - private property of class Man
+     */
     public String getName() {
         return name;
     }
-
+    /**
+     * @return gender - private property of class Man
+     */
     public String getGender() {
         return gender;
     }
-
+    /**
+     * @return division - private property of class Man
+     */
     public Division getDivision() {
         return division;
     }
-
+    /**
+     * @return salary - private property of class Man
+     */
     public double getSalary() {
         return salary;
     }
-
+    /**
+     * @return dateOfBirth - private property of class Man
+     */
     public String getDateOfBirth() {
         return dateOfBirth;
     }
-
+    /**
+     * @return string containing all the properties of the class
+     */
     @Override
     public String toString() {
-        return "ID: " + id + ", Name: " + name + ", Gender: " + gender + ", Division: " + division.getName() +
+        return "ID: " + id + ", Name: " + name + ", Gender: " + gender + ", Division: " + division.getId()+ " " + division.getName() +
                 ", Salary: " + salary + ", Date of Birth: " + dateOfBirth;
     }
 }
